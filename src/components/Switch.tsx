@@ -1,14 +1,12 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
+import { useTheme } from "next-themes";
 
 export default function Switch() {
     const [mounted, setMounted] = useState(false)
-    const { resolvedTheme, setTheme, theme } = useTheme()
-
-    console.log(resolvedTheme, theme)
+    const { resolvedTheme, setTheme } = useTheme()
 
     useEffect(() => {
         setMounted(true)
@@ -43,7 +41,6 @@ export default function Switch() {
                                 )
                             )
                         }
-
                     </div>
                 </div>
             </label>

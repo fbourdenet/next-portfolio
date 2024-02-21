@@ -1,5 +1,22 @@
 import React from "react";
-import * as SiIcons from "react-icons/si";
+
+import {
+    SiApache,
+    SiApple,
+    SiBitbucket,
+    SiGit,
+    SiGithub,
+    SiJavascript,
+    SiLinux,
+    SiMongodb,
+    SiNginx,
+    SiNodedotjs,
+    SiPython,
+    SiReact,
+    SiTypescript,
+    SiVuedotjs,
+    SiWindows
+} from "react-icons/si";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -12,7 +29,7 @@ import Image from "@/components/Image";
 
 export default function Home() {
     return (
-        <main className="dark:text-secondary-dark dark:bg-primary-dark bg-primary text-secondary font-custom flex h-full min-h-screen justify-center antialiased">
+        <main className="dark:text-secondary-dark dark:bg-primary-dark bg-primary text-secondary flex h-full min-h-screen justify-center antialiased">
             <div className="flex w-11/12 flex-col gap-14 p-4 sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
                 <Header />
                 <Main>
@@ -43,79 +60,79 @@ export default function Home() {
                             year="2023"
                             diploma="engineer's degree in computer science"
                             school="polytech nice sophia"
-                        ></Timeline>
+                        />
                         <Timeline
                             year="2020"
                             diploma="diploma in computer networking"
                             school="iut nice côte d'azur"
-                        ></Timeline>
+                        />
                         <Timeline
                             year="2018"
                             diploma="high school diploma"
                             school="lycée amiral de grasse"
-                        ></Timeline>
+                        />
                     </Section>
                     <Section title="🎯 my skills">
                         <Skill subject="web">
                             <Popover title="react">
-                                <SiIcons.SiReact className="h-5 w-5" />
+                                <SiReact className="h-5 w-5" />
                             </Popover>
                             <Popover title="vue.js">
-                                <SiIcons.SiVuedotjs className="h-5 w-5" />
+                                <SiVuedotjs className="h-5 w-5" />
                             </Popover>
                             <Popover title="javascript">
-                                <SiIcons.SiJavascript className="h-5 w-5" />
+                                <SiJavascript className="h-5 w-5" />
                             </Popover>
                             <Popover title="typescript">
-                                <SiIcons.SiTypescript className="h-5 w-5 " />
+                                <SiTypescript className="h-5 w-5 " />
                             </Popover>
                             <Popover title="node.js">
-                                <SiIcons.SiNodedotjs className="h-5 w-5" />
+                                <SiNodedotjs className="h-5 w-5" />
                             </Popover>
                         </Skill>
                         <Skill subject="mobile">
                             <Popover title="react native">
-                                <SiIcons.SiReact className="h-5 w-5" />
+                                <SiReact className="h-5 w-5" />
                             </Popover>
                         </Skill>
                         <Skill subject="software">
                             <Popover title="python">
-                                <SiIcons.SiPython className="h-5 w-5" />
+                                <SiPython className="h-5 w-5" />
                             </Popover>
                         </Skill>
                         <Skill subject="database">
                             <Popover title="mongodb">
-                                <SiIcons.SiMongodb className="h-5 w-5" />
+                                <SiMongodb className="h-5 w-5" />
                             </Popover>
                         </Skill>
                         <Skill subject="version control">
                             <Popover title="git">
-                                <SiIcons.SiGit className="h-5 w-5" />
+                                <SiGit className="h-5 w-5" />
                             </Popover>
                             <Popover title="github">
-                                <SiIcons.SiGithub className="h-5 w-5" />
+                                <SiGithub className="h-5 w-5" />
                             </Popover>
                             <Popover title="bitbucket">
-                                <SiIcons.SiBitbucket className="h-5 w-5" />
+                                <SiBitbucket className="h-5 w-5" />
                             </Popover>
                         </Skill>
                         <Skill subject="web server">
                             <Popover title="nginx">
-                                <SiIcons.SiNginx className="h-5 w-5" />
+                                <SiNginx className="h-5 w-5" />
                             </Popover>
                             <Popover title="apache">
-                                <SiIcons.SiApache className="h-5 w-5" />
+                                <SiApache className="h-5 w-5" />
                             </Popover>
                         </Skill>
                         <Skill subject="operating system">
                             <Popover title="windows">
-                                <SiIcons.SiWindows className="h-5 w-5" />
+                                <SiWindows className="h-5 w-5" />
                             </Popover>
                             <Popover title="linux">
-                                <SiIcons.SiLinux className="h-5 w-5" />
+                                <SiLinux className="h-5 w-5" />
                             </Popover>
                             <Popover title="macos">
-                                <SiIcons.SiApple className="h-5 w-5" />
+                                <SiApple className="h-5 w-5" />
                             </Popover>
                         </Skill>
                     </Section>
