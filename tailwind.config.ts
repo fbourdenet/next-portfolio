@@ -9,10 +9,10 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                primary: "#ece0d1",
+                primary: "#EAD8C0",
                 secondary: "#38220f",
                 "primary-dark": "#171717",
-                "secondary-dark": "#bababa",
+                "secondary-dark": "#A2A2A2",
             },
             screens: {
                 lg: "1440px",
