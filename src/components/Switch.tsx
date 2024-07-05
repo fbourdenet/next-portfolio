@@ -12,9 +12,9 @@ export default function Switch() {
         setMounted(true)
     }, [])
 
-    const handleDarkMode = () => {
-        const newDarkMode = resolvedTheme === 'light' ? 'dark' : 'light';
-        setTheme(newDarkMode)
+    const handleSwitch = () => {
+        const mode = resolvedTheme === 'light' ? 'dark' : 'light';
+        setTheme(mode)
     };
 
     return (
@@ -24,7 +24,7 @@ export default function Switch() {
                     <input
                         type="checkbox"
                         checked={resolvedTheme === "dark"}
-                        onChange={handleDarkMode}
+                        onChange={handleSwitch}
                         className="sr-only"
                     />
                     <div className="bg-other bg-secondary dark:bg-secondary-dark block h-6 w-10 rounded-full"></div>

@@ -3,9 +3,9 @@
 import { ThemeProvider } from 'next-themes'
 
 type ProvidersProps = {
-    children: React.ReactNode
+  children: React.ReactNode
 }
 
 export function Providers({ children }: ProvidersProps) {
-  return <ThemeProvider attribute='class' defaultTheme='system'>{children}</ThemeProvider>
+  return <ThemeProvider attribute='class' defaultTheme='light' enableSystem={false}>{children}</ThemeProvider>
 }
