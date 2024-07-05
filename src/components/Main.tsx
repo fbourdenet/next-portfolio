@@ -5,5 +5,5 @@ type MainProps = {
 };
 
 export default function Main({ children }: MainProps) {
-    return <main className="flex grow flex-col gap-12">{children}</main>;
+    return <main className="flex grow flex-col gap-12 tracking-normal">{children}</main>;
 }

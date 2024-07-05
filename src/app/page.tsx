@@ -30,7 +30,7 @@ import Image from "@/components/Image";
 export default function Home() {
     return (
         <main className="dark:text-secondary-dark dark:bg-primary-dark bg-primary text-secondary flex h-full min-h-screen justify-center antialiased">
-            <div className="flex w-11/12 flex-col gap-14 p-4 sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+            <div className="flex w-11/12 flex-col gap-14 p-4 sm:w-9/12 md:w-7/12 lg:w-5/12 xl:w-[38%] 2xl:w-4/12">
                 <Header />
                 <Main>
                     <Section title="🙋‍♂️ about me">
@@ -137,26 +137,9 @@ export default function Home() {
                         </Skill>
                     </Section>
                     <Section title="💻 my projects">
-                        <p className="text-lg font-semibold">#1 fordle</p>
+                        <p className="text-lg font-semibold">#1 wordle</p>
                         <p>
-                            fordle is my own version of the popular game{" "}
-                            <a
-                                className="inline underline"
-                                href="https://www.nytimes.com/games/wordle/index.html"
-                            >
-                                wordle
-                            </a>
-                            .
-                        </p>
-                        <Image
-                            src="fordle.jpg"
-                            alt="fordle image"
-                            loading="lazy"
-                        />
-                        <p>
-                            why? i found the game very fun and i wanted to try
-                            to replicate it. the main purpose was to learn new
-                            technologies such as vue.js.
+                            wordle is a popular word game made by Josh Wardle.
                         </p>
                         <p>
                             the game itself is very simple. you have to guess a
@@ -167,31 +150,44 @@ export default function Home() {
                             and which letters are not part of the word at all
                             (grey).
                         </p>
+                        <Image
+                            src="wordle.jpg"
+                            alt="wordle image"
+                            loading="lazy"
+                            caption="Screenshot of my own implementation of the wordle game"
+                        />
+                        <p>
+                            i wanted to recreate this game because i find it very fun to play
+                            and it can be used for some algorithm work.
+                        </p>
                         <br />
                         <p className="text-lg font-semibold">#2 beport</p>
                         <p>
-                            beport is a website used to export your bereal
-                            photos.
+                            beport is a website used to export your photos took with the bereal
+                            app.
+                        </p>
+                        <p>
+                            bereal is a social media app designed to offer a more authentic and
+                            spontaneous way for users to share their lives with friends.
+                            once a day, at a random time, bereal users receive a notification
+                            asking them to take a photo.
                         </p>
                         <Image
                             src="beport.jpg"
                             alt="beport image"
                             loading="lazy"
+                            caption="Screenshot of the BePort web application"
                         />
                         <p>
-                            why? i found myself using this app called bereal. it
-                            became a part of my routine, and i started
-                            accumulating a lot of pictures.
+                            i wanted to make this web app in the first place because
+                            i needed a way to export my photos to keep them in case bereal doesn't exist anymore.
                         </p>
                         <p>
-                            one day, i tried to export all my photos to store
-                            them for later, but there was a problem – i couldn't
-                            find a way to do it.
-                        </p>
-                        <p>
-                            sure, the app allowed individual exports of the
-                            photos, but here's the thing: each export came with
-                            a watermark. that's why i created beport.
+                            i had two problems with the bereal app :
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;• i could export the photos, but only one by one
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;• the exported photos have a bereal watermark at the bottom
                         </p>
                     </Section>
                 </Main>
